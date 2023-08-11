@@ -1,9 +1,9 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import HomeBackgorund from '../components/HomeBackgorund.vue';
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
+  <main class="h-screen w-screen">
+    <HomeBackgorund />
   </main>
 </template>
