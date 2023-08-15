@@ -7,15 +7,11 @@
             
             <h1>Easy Accouting</h1>
         </div>
-        <div class="w-9/12 flex items-center justify-evenly">
-            <h1>HOME</h1>
-            <h1>DOCUMENTOS</h1>
-            <h1>SERVIÇOS</h1>
-            <h1>AJUDA</h1>
-        </div>
+            <nav class="w-9/12 flex items-center justify-evenly">
+                <RouterLink to="/">HOME</RouterLink>
+                <RouterLink to="/docs">DOCUMENTOS</RouterLink>
+            </nav>
     </div>
 </template>
 <script setup>
 </script>
-<style>
-</style>
