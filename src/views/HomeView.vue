@@ -19,9 +19,7 @@ const topicos = [
     descricao: "Henrique, Davi e Stassun"
   }
 ];
-function redireciona(link){
-  window.location.href = link;
-}
+
 
 </script>
 

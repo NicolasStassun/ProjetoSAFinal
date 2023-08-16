@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import DocumentosView from '../views/DocumentosView.vue'
 import ServicosView from '../views/ServicosView.vue'
 import AjudaView from '../views/AjudaView.vue'
+import LeisView from '../views/LeisView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -26,6 +27,11 @@ const router = createRouter({
       path: '/ajuda',
       name: 'ajuda',
       component: AjudaView
+    },
+    {
+      path: '/leis',
+      name: 'leis',
+      component: LeisView
     }
   ]
 })

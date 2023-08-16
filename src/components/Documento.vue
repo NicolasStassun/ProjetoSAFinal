@@ -2,9 +2,6 @@
     <div class="mt-8 mb-8">
         <div style="width: 900px; max-height: auto;" id="hoverBrabo" class="bg-slate-400 h-16 rounded-xl flex items-center shadow-xl hover:bg-[#f7f7f7] hover:border hover:border-2" @click="redireciona(link)">
         <h1 class="text-xl ml-8 cursor-pointer">{{ titulo }}</h1>
-        <div class="flex justify-between w-full items-center break-words" style="max-height: auto;">
-            <p class="ml-8">{{resumo}}</p>
-        </div>
     </div>
     </div>
     
