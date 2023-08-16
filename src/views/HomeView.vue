@@ -40,7 +40,7 @@ function redireciona(link){
             empresa ou parte de uma grande corporação,
             estamos aqui para ajudar a aliviar o fardo da complexidade contábil.
           </p>
-          <RouterLink class="bg-sky-700 rounded-3xl items-center flex justify-center hover:bg-sky-600" style="width: 450px; height: 40px" to="/servicos">Veja nossos serviços</RouterLink>
+          <RouterLink class="rounded-3xl items-center flex justify-center hover:bg-sky-600" style="background-color: #007dfe; width: 450px; height: 40px" to="/servicos">Veja nossos serviços</RouterLink>
         </div>
       </div>
       <div class="w-1/2">
@@ -48,7 +48,9 @@ function redireciona(link){
       </div>
 
     </div>
-
+    <div class="flex justify-center items-center">
+      <h1 class="text-4xl mb-8 font-bold" >Com a Easy Accouting você terá</h1>
+    </div>
     <div class="flex justify-evenly mt-16">
       <div v-for="(item, index) in topicos" :key="item">
         <div v-if="index <= 3">

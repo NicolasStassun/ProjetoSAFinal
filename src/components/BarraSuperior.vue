@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full flex bg-sky-700" style="height: 100px;border-bottom: 3px solid black;">
+    <div class="w-full flex " style="height: 100px;border-bottom: 3px solid black; background-color: #007dfe;">
         <div class=" w-1/12 h-full flex justify-center items-center text-4xl">
             <img src="../assets/logo.svg" style="height: 80%; width: 80%;" href="/">
         </div>

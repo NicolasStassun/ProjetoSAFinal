@@ -1,6 +1,6 @@
 <template>
     <BarraSuperior></BarraSuperior>
-    <div style="background-color: #EEF4D4; height: 88%;" class="w-full"></div>
+    <div style="height: 88%;" class="w-full bg-slate-200"></div>
 </template>
 <script setup>
 import BarraSuperior from '../components/BarraSuperior.vue';
