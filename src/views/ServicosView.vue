@@ -1,6 +1,10 @@
 <template>
     <BarraSuperior></BarraSuperior>
-    <div style="height: 88%;" class="w-full bg-slate-200"></div>
+    <div style="min-height: 100%; height: auto;" class="w-full bg-slate-200 ">
+        <div style="height:830px ;">
+
+        </div>
+    </div>
 </template>
 <script setup>
 import BarraSuperior from '../components/BarraSuperior.vue';

@@ -24,38 +24,52 @@ const topicos = [
 </script>
 
 <template>
-  <main class="w-full bg-slate-200" style="min-height: 100%; height: auto;">
-    <BarraSuperior />
-    <div class="w-full flex" style="height: 920px;">
-      <div class="flex flex-col w-1/2 justify-center text-justify items-center">
-        <h1 class="text-4xl mb-8 font-bold">Easy Accouting</h1>
-        <div style="height: auto; width: 550px;" class="flex flex-col items-center">
-          <p class="text-xl mb-8">
-            Bem-vindo ao Easy Accounting: sua solução descomplicada para todas as suas necessidades contábeis!
-            Nosso site é dedicado a fornecer serviços de consultoria contábil de alta qualidade, projetados para
-            simplificar
-            e otimizar suas operações financeiras. Seja você um empreendedor individual, proprietário de uma pequena
-            empresa ou parte de uma grande corporação,
-            estamos aqui para ajudar a aliviar o fardo da complexidade contábil.
-          </p>
-          <RouterLink class="rounded-3xl items-center flex justify-center hover:bg-sky-600" style="background-color: #007dfe; width: 450px; height: 40px" to="/servicos">Veja nossos serviços</RouterLink>
+  <main class="w-full  bg-slate-200" style="min-height: 100%; height: auto;">
+    <BarraSuperior/>
+    <div class="overflow-y-auto">
+      <div class="w-full flex" style="height: screen;">
+        <div class="flex flex-col w-1/2 justify-center text-justify items-center">
+          <h1 class="text-4xl mb-8 font-bold">Easy Accouting</h1>
+          <div style="height: auto; width: auto; min-width: none; max-width: 550px;" class="flex flex-col items-center">
+            <p class="text-xl mb-8">
+              Bem-vindo ao Easy Accounting: sua solução descomplicada para todas as suas necessidades contábeis!
+              Nosso site é dedicado a fornecer serviços de consultoria contábil de alta qualidade, projetados para
+              simplificar
+              e otimizar suas operações financeiras. Seja você um empreendedor individual, proprietário de uma pequena
+              empresa ou parte de uma grande corporação,
+              estamos aqui para ajudar a aliviar o fardo da complexidade contábil.
+            </p>
+            <RouterLink to="/servicos" style="width: 450px;">
+              <button id="hoverBrabo" class="rounded-3xl items-center flex justify-center hover:bg-sky-600 drop-shadow-xl"
+                style="background-color: #007dfe; max-width: 100%; width: 100%; min-width: none; height: 40px">Veja nossos
+                serviços</button>
+            </RouterLink>
+          </div>
         </div>
-      </div>
-      <div class="w-1/2">
-        <img src="../assets/HomeContavel.svg" style="height: 100%; width: 100%;">
-      </div>
+        <div class="w-1/2">
+          <img src="../assets/HomeContavel.svg" style="height: 100%; width: 100%;">
+        </div>
 
-    </div>
-    <div class="flex justify-center items-center">
-      <h1 class="text-4xl mb-8 font-bold" >Com a Easy Accouting você terá</h1>
-    </div>
-    <div class="flex justify-evenly mt-16">
-      <div v-for="(item, index) in topicos" :key="item">
-        <div v-if="index <= 3">
-          <Topicos :titulo="item.titulo" :img="item.img" :descricao="item.descricao" />
+      </div>
+      <div>
+        <div class="flex justify-center items-center">
+          <h1 class="text-4xl mb-8 font-bold">Com a Easy Accouting você terá</h1>
+        </div>
+        <div class="flex justify-evenly mt-16">
+          <div v-for="(item, index) in topicos" :key="item">
+            <div v-if="index <= 3">
+              <Topicos :titulo="item.titulo" :img="item.img" :descricao="item.descricao" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
 
   </main>
 </template>
+<style scoped>
+#hoverBrabo:hover {
+  box-shadow: inset 0px 0px 0px 2px #007dfe;
+}
+</style>
