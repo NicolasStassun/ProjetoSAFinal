@@ -1,5 +1,5 @@
 <template>
-    <div style="height: 130px; width: 100px;" id="hoverBrabo" class="bg-slate-50 flex justify-center items-center rounded-xl drop-shadow-xl">
+    <div style="height: 130px; width: 100px; margin: 0;" id="hoverBrabo" class="bg-slate-50 flex justify-center items-center rounded-xl drop-shadow-xl">
         <RouterLink :to="link">
             <div class="flex items-center flex-col">
                 <img style="height: 80px; width: 80px;" :src="icon">
