@@ -1,9 +1,9 @@
 <template>
     <main class="w-full bg-slate-200" style="min-height: 100%; height: auto;">
         <div>
-            <BarraSuperior></BarraSuperior>
-            <div style="height: 830px;" class="w-full bg-slate-200 flex justify-around items-center">
-                <div class="flex justify-cente" v-for="contato in contatos" :key="contato">
+            <BarraSuperior class="mb-16"></BarraSuperior>
+            <div style="height: 830px;" class="w-full bg-slate-200 flex flex-wrap justify-around items-center">
+                <div class="flex" v-for="contato in contatos" :key="contato">
                     <Contato class="flex items-center flex-col cursor-pointer" :img="contato.img" :nome="contato.nome" :link="contato.link"
                         :descricao="contato.descricao"></Contato>
                 </div>
